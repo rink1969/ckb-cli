@@ -28,9 +28,14 @@ failure = "0.1.5"
 lazy_static = "1.4.0"
 
 ckb-types = { git = "https://github.com/nervosnetwork/ckb", tag = "v0.30.0-rc1" }
-ckb-script = { git = "https://github.com/nervosnetwork/ckb", tag = "v0.30.0-rc1" }
+ckb-script = { git = "https://github.com/nervosnetwork/ckb", tag = "v0.30.0-rc1", default-features = false }
 ckb-jsonrpc-types = { git = "https://github.com/nervosnetwork/ckb", tag = "v0.30.0-rc1" }
 ckb-hash = { git = "https://github.com/nervosnetwork/ckb", tag = "v0.30.0-rc1" }
 ckb-resource = { git = "https://github.com/nervosnetwork/ckb", tag = "v0.30.0-rc1" }
 ckb-crypto = { git = "https://github.com/nervosnetwork/ckb", tag = "v0.30.0-rc1", features = ["secp"] }
 ckb-sdk-types = { path = "../ckb-sdk-types" }
+
+[features]
+default = ["logging"]
+asm = ["ckb-script/asm"]
+logging = ["ckb-script/logging"]

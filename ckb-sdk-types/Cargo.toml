@@ -19,6 +19,6 @@ ckb-error = { git = "https://github.com/nervosnetwork/ckb", tag = "v0.30.0-rc1" 
 ckb-crypto = { git = "https://github.com/nervosnetwork/ckb", tag = "v0.30.0-rc1", features = ["secp"] }
 
 [features]
-default = ["ckb-script/default"]
+default = ["logging"]
 asm = ["ckb-script/asm"]
 logging = ["ckb-script/logging"]
