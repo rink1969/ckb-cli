@@ -5,10 +5,10 @@
 1. 安装 armv7 交叉编译器
 
     ```shell
-   wget http://releases.linaro.org/components/toolchain/binaries/4.9-2017.01/arm-linux-gnueabihf/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf.tar.xz
-   tar Jxvf gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf.tar.xz
-   mv gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf /opt/
-   export PATH=/opt/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin:"${PATH}"
+   wget http://releases.linaro.org/components/toolchain/binaries/7.5-2019.12/arm-linux-gnueabihf/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf.tar.xz
+   tar Jxvf gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf.tar.xz
+   mv gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf /opt/
+   export PATH=/opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin:"${PATH}"
     ```
 
 2. 配置 Rust 交叉编译环境
